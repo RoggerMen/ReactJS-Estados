@@ -2,7 +2,7 @@ import React from "react";
 
 function UseState({ name }) {
 
-    const[error, setError] = React.useState(true);
+    const[error, setError] = React.useState(false);
     const[loading, setLoading] = React.useState(false);
 
     React.useEffect(() => {
@@ -15,7 +15,7 @@ function UseState({ name }) {
                     setLoading(false);
     
                     console.log("Terminando la Validación");
-                }, 3000)
+                }, 2000)
             }
 
             console.log("Terminando el Efecto");
